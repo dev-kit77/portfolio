@@ -12,7 +12,7 @@
 
 		<!--Bootstrap Icons-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-	
+
 		<!--Import style sheet-->
 		<link href="style.css" rel="stylesheet">
 
@@ -21,7 +21,7 @@
 			crossorigin="anonymous">
 			</script>
 	</head>
-	
+
 	<body>
 		<!--Header Insert-->
 		<header id="header" class="sticky-top"></header>
@@ -66,7 +66,7 @@
 					<h1>My Projects!</h1>
 				</div>
 			</div>
-			
+
 			<div class="container p-4">
 				<!--Featured-->
 				<div class="row align-items-center justify-content-center">
@@ -74,39 +74,113 @@
 						<div class="card mb-4 bg-dark-subtle fill border round overflow-hidden">
 							<div class="row align-items-center p-4 p-xxl-0">
 								<div class="col-12 col-md-6">
-									<img src="img/pebl.png" class="card-img" alt="Pebl Running on a PC">
+									<img src="img/lilypad-api.png" class="card-img" alt="Lilypad-API">
 								</div>
-			
+
 								<div class="col-12 col-md-6">
 									<div class="card-body">
-										<h2 class="card-title">Pebl</h2>
+										<h2 class="card-title">Lilypad API</h2>
 										<p class="card-text">
-											The most expansive project I have worked on, Pebl. It is a basic social media
-											client-server pairing similar to
-											twitter, but designed with expandibility in mind.
-											As a group collaboration we created version 1, since then I have revised the program
-											code for
-											some minor updates with more being planned with the original team.
-											Through this project I was responsible for the JavaFX interface originally, although
-											with that
-											completed for now I have been working on revising all of the server connection code in
-											the
-											client and bugfixes.
-										</p>
-										<a href="https://github.com/dev-kit77/pebl-client" class="btn fs-4 btn-primary">Visit
+                						    Lilypad-API is the culmination of all of the work done during second year.
+                							Lilypad is a Hyper-Localised Social Media, that using GPS data from a client app, the API sorts and facilitates user interaction within their local area.
+                							The API is built on a stack of Bun with Prisma ORM and a Postgres Database, written in TypeScript. To our team, we felt this was the best stack for working with the exact data we needed to reach requirements.
+                							For this project there was a client pairing but I only primarily worked on the backend hence not being listed,
+                                            I was responsible for a lot of the design of routes and structure of the API internally along with the data models used within,
+                                            along with our comprehensive integraton testing. I do plan on working on an entirely revamped client when the time comes around.
+                                        </p>
+										<a href="https://github.com/dev-kit77/lilypad-api" class="btn fs-4 btn-primary">Visit
 											Repository</a>
 									</div>
 								</div>
 							</div>
-			
 						</div>
 					</div>
 				</div>
-			
+
 				<div class="row align-items-center justify-content-center">
 					<!--Left-->
 					<div class="col-12 col-md-6">
-						<div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+					    <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+							<img src="img/scribble.png" class="card-img" alt="Scribble In the terminal" style="overflow: hidden;">
+							<div class="card-body">
+								<h2 class="card-title">Scribble</h2>
+								<p class="card-text">
+									Scribble started as a Java console based recreation of Scrabble, Originally with a lesser
+									ruleset but I eventually expanded this further to the full ruleset,
+									Including scoring for overlapping words and special board tiles. A big part of my personal
+									additions to the game was well spent on the dynamic board sizing and other touches.
+									As much as at it's core it's simple sounding concept, it proved to be a challenge to implement
+									and I enjoyed making it and enjoy the finished product.
+									I learned a lot about making intuitive command line interfaces for progams from this project
+									too. While not as accessible as a GUI, I tried to make it as polished and easy to use as
+									possible.
+									The final result is I belive a very well polished recreation.
+								</p>
+								<a href="https://github.com/dev-kit77/Scribble" class="btn fs-4 btn-primary">Visit Repository</a>
+							</div>
+						</div>
+					</div>
+
+					<!--Right-->
+					<div class="col-12 col-md-6">
+                	    <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+      						<img src="img/libdex.png" class="card-img" alt="libDex in the terminal" style="overflow: hidden;">
+      						<div class="card-body">
+     							<h2 class="card-title">libDex</h2>
+     							<p class="card-text">
+    								libDex was my first adventure into C++ programming and I thoroughly enjoyed it overall. It consists of
+                                    a library management system, Along with classes for different media types and some small helper libraries
+                                    I built specifically for working with the data.
+                                    One of the major things I utilised in the project was templating and some more advanced searching and
+                                    sorting techniques based on what most likely users search queries will be.
+                                    I gained a lot of experience with project management and structure over this project due to the sheer amount of files C++ projects require,
+                                    Along with a much greater understanding of Object-Oriented Programming and how the inner working of C/C++ function and how coding in these
+                                    languages has stood the test of time.
+     							</p>
+     							<a href="https://github.com/dev-kit77/libDex" class="btn fs-4 btn-primary">Visit Repository</a>
+      						</div>
+       					</div>
+					</div>
+				</div>
+
+				<!--Featured 2-->
+				<div class="row align-items-center justify-content-center">
+					<div class="col-12">
+        				<div class="card mb-4 bg-dark-subtle fill border round overflow-hidden">
+        					<div class="row align-items-center p-4 p-xxl-0">
+        						<div class="col-12 col-md-6">
+        							<img src="img/pebl.png" class="card-img" alt="Pebl Running on a PC">
+        						</div>
+
+        						<div class="col-12 col-md-6">
+        							<div class="card-body">
+        								<h2 class="card-title">Pebl</h2>
+        								<p class="card-text">
+        									The most expansive project I have worked on, Pebl. It is a basic social media
+        									client-server pairing similar to
+        									twitter, but designed with expandibility in mind.
+        									As a group collaboration we created version 1, since then I have revised the program
+        									code for
+        									some minor updates with more being planned with the original team.
+        									Through this project I was responsible for the JavaFX interface originally, although
+        									with that
+        									completed for now I have been working on revising all of the server connection code in
+        									the
+        									client and bugfixes.
+        								</p>
+        								<a href="https://github.com/dev-kit77/pebl-client" class="btn fs-4 btn-primary">Visit
+        									Repository</a>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+					</div>
+				</div>
+
+				<div class="row align-items-center justify-content-center">
+					<!--Left-->
+					<div class="col-12 col-md-6">
+	                    <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
 							<img src="img/packetTracer.png" class="card-img" alt="GlorboCorp Home Page">
 							<div class="card-body">
 								<h2 class="card-title">ABnegation Company Network</h2>
@@ -128,47 +202,11 @@
 									Packet Tracer File</a>
 							</div>
 						</div>
-			
-						<div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
-							<img src="img/glorbocorp.png" class="card-img" alt="GlorboCorp Home Page">
-							<div class="card-body">
-								<h2 class="card-title">GlorboCorp</h2>
-								<p class="card-text">
-									This project is a simple, sytrical webpage for an imaginary company called GlorboCorp, selling a
-									variety of items such as Glorbs & Flards.
-									Set in the distant future of 2055, it takes jabs at the mental state of the fictional developer
-									hired to create the site and it's content.
-									The real purpose of the site however was to take on learning Bootstrap, The site is entirely
-									built with Bootstrap and it's classes over use of css or inline style.
-								</p>
-								<a href="https://dev-kit77.github.io/GlorboCorp/" class="btn fs-4 btn-primary">Visit Site</a>
-							</div>
-						</div>
 					</div>
-			
+
 					<!--Right-->
 					<div class="col-12 col-md-6">
-						<div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
-							<img src="img/scribble.png" class="card-img" alt="Scribble In the terminal" style="overflow: hidden;">
-							<div class="card-body">
-								<h2 class="card-title">Scribble</h2>
-								<p class="card-text">
-									Scribble started as a Java console based recreation of Scrabble, Originally with a lesser
-									ruleset but I eventually expanded this further to the full ruleset,
-									Including scoring for overlapping words and special board tiles. A big part of my personal
-									additions to the game was well spent on the dynamic board sizing and other touches.
-									As much as at it's core it's simple sounding concept, it proved to be a challenge to implement
-									and I enjoyed making it and enjoy the finished product.
-									I learned a lot about making intuitive command line interfaces for progams from this project
-									too. While not as accessible as a GUI, I tried to make it as polished and easy to use as
-									possible.
-									The final result is I belive a very well polished recreation.
-								</p>
-								<a href="https://github.com/dev-kit77/Scribble" class="btn fs-4 btn-primary">Visit Repository</a>
-							</div>
-						</div>
-			
-						<div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+                        <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
 							<img src="img/shebang.png" class="card-img" alt="Shebang in bash">
 							<div class="card-body">
 								<h2 class="card-title">Shebang</h2>
@@ -188,6 +226,79 @@
 						</div>
 					</div>
 				</div>
+
+				<!--Featured 3-->
+				<div class="row align-items-center justify-content-center">
+					<div class="col-12">
+        				<div class="card mb-4 bg-dark-subtle fill border round overflow-hidden">
+        					<div class="row align-items-center p-4 p-xxl-0">
+        						<div class="col-12 col-md-6">
+        							<img src="img/g-spec.png" class="card-img" alt="G-Spec Presentation">
+        						</div>
+
+        						<div class="col-12 col-md-6">
+        							<div class="card-body">
+        								<h2 class="card-title">G-Spec</h2>
+        								<p class="card-text">
+                                            This was our conceptual UI/UX design for a companion app to a theoricical product G-Spec,
+                                            A pair of smart glasses capable of translating between speech and sign language.
+                                            The whole focus for this project was the accessibility features as such as our accessible font and high constrast mode
+                                            due to the target username and I feel this was achieved well.
+                                            This project being another team project I ended up being responsible for a lot of the design aspects of the project such as layout,
+                                            themeing and overall design language, with some functionality aspects, along with presentation design and structure also came under my juristiction.
+        								</p>
+
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-12 col-md-6">
+                								<a href="files/G-Spec.fig" class="btn fs-4 btn-primary">Download Figma File</a>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                								<a href="files/G-Spec.pptx" class="btn fs-4 btn-primary">Download Presentation</a>
+                                            </div>
+                                        </div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+					</div>
+				</div>
+
+				<div class="row align-items-center justify-content-center">
+					<!--Left-->
+					<div class="col-12 col-md-6">
+					    <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+							<img src="img/glorbocorp.png" class="card-img" alt="GlorboCorp Home Page">
+							<div class="card-body">
+								<h2 class="card-title">GlorboCorp</h2>
+								<p class="card-text">
+									This project is a simple, sytrical webpage for an imaginary company called GlorboCorp, selling a
+									variety of items such as Glorbs & Flards.
+									Set in the distant future of 2055, it takes jabs at the mental state of the fictional developer
+									hired to create the site and it's content.
+									The real purpose of the site however was to take on learning Bootstrap, The site is entirely
+									built with Bootstrap and it's classes over use of css or inline style.
+								</p>
+								<a href="https://dev-kit77.github.io/GlorboCorp/" class="btn fs-4 btn-primary">Visit Site</a>
+							</div>
+						</div>
+					</div>
+
+					<!--Right-->
+					<div class="col-12 col-md-6">
+					    <div class="card mb-4 bg-dark-subtle fill round overflow-hidden">
+							<img src="img/github.png" class="card-img" alt="Github Page">
+							<div class="card-body">
+								<h2 class="card-title">...And More!</h2>
+								<p class="card-text">
+									You've reached the end of the Featured Projects here! To see my most up to date work
+									check out my GitHub with all the latest projects I can showcase!
+								</p>
+								<a href="https://github.com/dev-kit77" class="btn fs-4 btn-primary">Visit GitHub Page</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="about" class="anchor"></div>
@@ -202,25 +313,25 @@
 					<div class="col-12 col-md-4">
 						<div class="p-3 bg-warning border round order-2">
 							<h2 class="text-center">My Background.</h2>
-							
+
 							<div class="text-justify">
 								<p>
 									I've been around computers for so long I can't remember when it started. Sometime around 7 I dived into scratch
 									and never looked back.
 								</p>
-							
+
 								<p>
 									From there, I worked on modding scratch games, my dad helped me with a facebook clone with html and angular.js
 									and I also was playing with Embedded Systems like Raspberri Pi's with python.
 								</p>
-							
+
 								<p>
 									Time Went on and Scratch Turned into Gamemaker which became Visual Basic, I began working with Vintage PC's to
 									understand PC hardware and teh fundementals of software.
 									By highschool I was intimately familiar with PC's and electronics, punching up doing work well above my level to
 									a high standard.
 								</p>
-							
+
 								<p>
 									Now that I've built up this fundemental foundation in software and hardware, I'm putting it to use in my degree
 									learning Java and C/C++,
@@ -238,7 +349,7 @@
 					<div class="col-12 col-md-4 order-3">
 						<div class="p-3 bg-danger border round">
 							<h2 class="text-center">Plans and Ambitions?</h2>
-							
+
 							<div class="text-justify">
 								<p>
 									What do I plan to do you ask? While I may not know particularly where I want to go I do have some goals:
@@ -272,17 +383,17 @@
 					<h1>More Info?</h1>
 				</div>
 			</div>
-			
+
 			<div class="container p-4">
 				<div class="row my-4 justify-content-around align-items-center">
 					<div class="col-12 col-md-5 order-1 p-4 mb-md-0 round border bg-success">
 						<h2>Thank You!</h2>
-			
+
 						<p>
 							You made it to the end of the site! Thank you for taking a look at my projects and listening to my
 							story. I hope you found something useful from all of the information!
 						</p>
-			
+
 						<p>
 							If you need any more info or just want to contact me, you can do so with the form provided. I will try
 							and get back to you as soon as I can!
@@ -298,25 +409,25 @@
 						</p>
 
 						<p>
-							For a copy of my CV, please click the download button below! 
+							For a copy of my CV, please click the download button below!
 						</p>
 
 						<a href="files/CV.pdf" download="Kit Cochrane CV.pdf" class="btn fs-4 btn-primary mb-3">Download CV (.pdf Format)</a>
 
 						<h2>Kit.</h2>
 					</div>
-			
+
 					<div class="col-12 col-md-7 order-2 px-5 py-3">
 						<!-- Form action API Endpoint  -->
 						<form action="https://api.web3forms.com/submit" method="POST" id="form">
 							<input type="hidden" name="access_key" value="6bcba8df-a789-4846-a66b-7a804312697f">
-						
+
 							<input type="hidden" name="subject" value="New Submission">
-						
+
 							<input type="hidden" name="from_name" value="Portfolio Site">
 
 							<input type="hidden" name="redirect" value="#confirmation">
-						
+
 							<div class="mb-2">
 								<label for="name" name="name" class="form-label">Name</label>
 								<input type="name" class="form-control" placeholder="John Smith" name="name" required>
@@ -331,7 +442,7 @@
 								<label for="contactMessage" class="form-label">Message</label>
 								<textarea class="form-control" name="message" rows="5" required></textarea>
 							</div>
-						
+
 							<div class="mb-2">
 								<button class="btn btn-primary fs-4" type="submit">Send</button>
 							</div>
@@ -351,5 +462,5 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 			crossorigin="anonymous"></script>
-	</body>	
+	</body>
 </html>
