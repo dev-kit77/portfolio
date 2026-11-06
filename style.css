@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+10&family=Workbench&display=swap');
 
 body {
-	font-family: "Jersey 10", sarif;
+	font-family: 'Jersey 10', sans-serif;
 	font-size: larger;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-	font-family: "Bytesized", sarif;
-	font-size: 36;
+	font-family: 'Bytesized', sans-serif;
+	font-size: 36px;
 }
 
 header {
@@ -29,7 +29,7 @@ img {
 }
 
 .fill {
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 }
 
@@ -54,7 +54,7 @@ img {
 	/*Theming*/
 	border-radius: 50px;
 	color: #00ff00;
-	font-family: "Workbench", monospace;
+	font-family: 'Workbench', monospace;
 	text-shadow: 0 0 10px #00ff00;
 	filter: blur(1px);
 	padding: 2rem;
@@ -62,24 +62,24 @@ img {
 
 /*fonts*/
 .workbench-IBM {
-	font-family: "Workbench", sans-serif;
+	font-family: 'Workbench', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	font-variation-settings:
-		"BLED" 0,
-		"SCAN" 0;
+		'BLED' 0,
+		'SCAN' 0;
 }
 
 .bytesized-regular {
-	font-family: "Bytesized", sans-serif;
+	font-family: 'Bytesized', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: large;
 }
 
 .jersey-10-regular {
-	font-family: "Jersey 10", sans-serif;
+	font-family: 'Jersey 10', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }

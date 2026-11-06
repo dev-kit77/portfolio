@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>footer</title>
-	</head>
-
 	<body>
-		<nav class="navbar navbar-expand-md bg-dark-subtle border-0 border-top">
+		<nav class="navbar bg-dark-subtle border-0 border-top">
 			<div class="container-fluid">
-				<a class="navbar-brand fw-bold justify-content-start text-dark">© 2025 Kit Cochrane 2025</a>
+				<a class="navbar-brand fw-bold justify-content-start text-dark"
+					>© 2025 Kit Cochrane 2025</a
+				>
 
 				<ul class="navbar-nav gap-2 justify-content-end">
 					<li class="nav-item">
-						<a class="bi bi-linkedin text-dark" href="https://www.linkedin.com/in/dev-kit"></a>
+						<a
+							class="bi bi-linkedin text-dark"
+							href="https://www.linkedin.com/in/dev-kit"
+						></a>
 					</li>
 
 					<li class="nav-item">
@@ -19,39 +20,57 @@
 					</li>
 				</ul>
 
-				<div class="collapse navbar-collapse justify-content-end" id="headerNav">
+				<div class="justify-content-end" id="headerNav">
 					<ul class="navbar-nav jersey-10-regular fs-3 justify-content-end">
 						<li class="nav-item">
-							<a class="nav-link active text-dark" aria-current="page" href="#">Welcome</a>
+							<a class="nav-link active text-dark" aria-current="page" href="#"
+								>Welcome</a
+							>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active text-dark" aria-current="page" href="#projects">My Projects</a>
+							<a
+								class="nav-link active text-dark"
+								aria-current="page"
+								href="#projects"
+								>My Projects</a
+							>
 						</li>
-					
+
 						<li class="nav-item">
-							<a class="nav-link active text-dark" aria-current="page" href="#about">About Me</a>
+							<a class="nav-link active text-dark" aria-current="page" href="#about"
+								>About Me</a
+							>
 						</li>
-					
+
 						<li class="nav-item">
-							<a class="nav-link active text-dark" aria-current="page" href="#contact">More Info</a>
+							<a class="nav-link active text-dark" aria-current="page" href="#contact"
+								>More Info</a
+							>
 						</li>
-					
+
 						<li class="nav-item">
-							<button class="btn btn-light" id="btnLightsFooter" type="button" aria-expanded="false" aria-label="Toggle theme">
+							<button
+								class="btn btn-light"
+								id="btnLightsFooter"
+								type="button"
+								aria-expanded="false"
+								aria-label="Toggle theme"
+							>
 								<i class="bi bi-moon-stars-fill" fill="currentColor"></i>
 							</button>
 						</li>
 					</ul>
 				</div>
-			
 			</div>
 		</nav>
 
 		<!--Custom JS-->
 		<script type="module" defer>
 			import { switchLights } from './javasc/darkToggle.js'
-			document.getElementById('btnLightsFooter').addEventListener('click', (e) => { switchLights() })
+			document.getElementById('btnLightsFooter').addEventListener('click', (e) => {
+				switchLights()
+			})
 		</script>
 	</body>
 </html>

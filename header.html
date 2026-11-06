@@ -1,9 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Header</title>
-	</head>
-
 	<body>
 		<nav class="navbar navbar-expand-lg p-3 bg-primary shadow round">
 			<div class="container-fluid">
@@ -11,7 +7,15 @@
 
 				<a class="navbar-brand fs-1 fw-bold bytesized-regular" href="#">Kit Cochrane</a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#headerNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -22,19 +26,31 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
+							<a class="nav-link active" aria-current="page" href="#projects"
+								>My Projects</a
+							>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#about">About Me</a>
+							<a class="nav-link active" aria-current="page" href="#about"
+								>About Me</a
+							>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#contact">More Info</a>
+							<a class="nav-link active" aria-current="page" href="#contact"
+								>More Info</a
+							>
 						</li>
 
 						<li class="nav-item">
-							<button class="btn btn-light" id="btnLightsHeader" type="button" aria-expanded="false" aria-label="Toggle theme">
+							<button
+								class="btn btn-light"
+								id="btnLightsHeader"
+								type="button"
+								aria-expanded="false"
+								aria-label="Toggle theme"
+							>
 								<i class="bi bi-moon-stars-fill" fill="currentColor"></i>
 							</button>
 						</li>
@@ -46,7 +62,9 @@
 		<!--Custom JS-->
 		<script type="module" defer>
 			import { switchLights } from './javasc/darkToggle.js'
-			document.getElementById('btnLightsHeader').addEventListener('click', (e) => { switchLights() })
+			document.getElementById('btnLightsHeader').addEventListener('click', (e) => {
+				switchLights()
+			})
 		</script>
 	</body>
 </html>
