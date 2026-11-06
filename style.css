@@ -31,7 +31,10 @@ header {
 }
 
 /*Leave room for the sticky header when the skip link jumps to the content*/
-#main {
+#main,
+#projects,
+#about,
+#contact {
 	scroll-margin-top: 8rem;
 }
 
