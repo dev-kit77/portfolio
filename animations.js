@@ -1,8 +1,16 @@
 import { typer, blink, remover } from './javasc/typing.js'
-export { headline, cursor }
+export { headline }
+
+//show a static headline instead of the typing loop when motion is reduced
+const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
 
 async function headline(element) {
-	element.innerText = 'K:\\>'
+	if (reduceMotion) {
+		element.textContent = 'K:\\> welcome to my site!'
+		return
+	}
+
+	element.textContent = 'K:\\>'
 
 	await blink(element, 50)
 

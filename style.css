@@ -5,6 +5,22 @@ body {
 	font-size: larger;
 }
 
+/*Skip link: hidden until it receives keyboard focus*/
+.skip-link {
+	position: absolute;
+	top: -100%;
+	left: 1rem;
+	z-index: 2000;
+	padding: 0.5rem 1rem;
+	background-color: var(--bs-primary);
+	color: var(--bs-dark);
+	border-radius: var(--bs-border-radius);
+}
+
+.skip-link:focus {
+	top: 1rem;
+}
+
 :is(h1, h2, h3, h4, h5, h6) {
 	font-family: 'Bytesized', sans-serif;
 }
@@ -12,6 +28,11 @@ body {
 header {
 	margin: 1rem;
 	top: 1rem !important;
+}
+
+/*Leave room for the sticky header when the skip link jumps to the content*/
+#main {
+	scroll-margin-top: 8rem;
 }
 
 img {
