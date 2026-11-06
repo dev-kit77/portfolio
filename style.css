@@ -7,7 +7,6 @@ body {
 
 :is(h1, h2, h3, h4, h5, h6) {
 	font-family: 'Bytesized', sans-serif;
-	font-size: 36px;
 }
 
 header {
@@ -26,6 +25,16 @@ img {
 .anchor {
 	position: relative;
 	top: -150px;
+}
+
+/*Only show the success message after Web3Forms redirects to #confirmation*/
+#confirmation {
+	display: none;
+	scroll-margin-top: 8rem;
+}
+
+#confirmation:target {
+	display: block;
 }
 
 .fill {
