@@ -14,7 +14,7 @@ async function typer(element, txt) {
 	//loop for every char in the string
 	for (let char of txt) {
 		//append char
-		element.innerHTML += char
+		element.textContent += char
 
 		//wait 100ms
 		await delay(100)
@@ -29,9 +29,9 @@ async function typer(element, txt) {
  */
 async function remover(element, noToRemove) {
 	//loop for each char to remove
-	for (let i = 0; i <= noToRemove; i++) {
+	for (let i = 0; i < noToRemove; i++) {
 		//remove last char
-		element.innerHTML = element.innerHTML.slice(0, -1)
+		element.textContent = element.textContent.slice(0, -1)
 
 		//wait 100ms
 		await delay(100)
@@ -50,10 +50,10 @@ async function blink(element, time) {
 		//check even/odd time
 		if (i % 2 === 0) {
 			//add char
-			element.innerHTML += '_'
+			element.textContent += '_'
 		} else {
 			//remove char
-			element.innerHTML = element.innerHTML.replace('_', '')
+			element.textContent = element.textContent.replace('_', '')
 		}
 
 		//wait 100ms
@@ -61,8 +61,8 @@ async function blink(element, time) {
 	}
 
 	//check if char remains after loop
-	if (element.innerHTML.charAt(element.innerHTML.length - 1)) {
+	if (element.textContent.charAt(element.textContent.length - 1)) {
 		//remove fake cursor
-		element.innerHTML = element.innerHTML.replace('_', '')
+		element.textContent = element.textContent.replace('_', '')
 	}
 }
