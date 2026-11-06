@@ -1,28 +1,34 @@
 //import modules
-import { setLights } from './javasc/darkToggle.js'
-import { headline, cursor } from './animations.js'
+import { setLights, syncToggleUI } from './javasc/darkToggle.js'
+import { headline } from './animations.js'
 
 //point of entry
 $(function () {
+	//apply the stored/system theme immediately, before the fragments load
+	applyTheme()
+
 	//load and inject header
 	$('#header').load('header.html', function () {
 		//load and inject footer
 		$('#footer').load('footer.html', function () {
-			//call main
-			main()
+			//refresh the toggle buttons now that they exist
+			syncToggleUI(document.documentElement.getAttribute('data-bs-theme'))
+
+			//call animation functions
+			headline(document.getElementById('headline'))
 		})
 	})
 })
 
-//main js stem following page load
-function main() {
+//apply the stored light/dark state, falling back to the system preference
+function applyTheme() {
 	//get stored light/dark state
 	let lights = localStorage.getItem('lights')
 
-	//parce state
-	if (lights === 'false') {
+	//parse state (supports both the boolean and theme-name formats)
+	if (lights === 'false' || lights === 'dark') {
 		setLights(false)
-	} else if (lights === 'true') {
+	} else if (lights === 'true' || lights === 'light') {
 		setLights(true)
 	}
 	//default fallbacks
@@ -31,7 +37,4 @@ function main() {
 	} else {
 		setLights(true)
 	}
-
-	//call animation functions
-	headline(document.getElementById('headline'))
 }

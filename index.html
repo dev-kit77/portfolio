@@ -8,6 +8,26 @@
 		<!--Bootstrap-->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Apply the stored theme before first paint to avoid a flash-->
+		<script>
+			;(function () {
+				try {
+					const saved = localStorage.getItem('lights')
+					const theme =
+						saved === 'dark' || saved === 'false'
+							? 'dark'
+							: saved === 'light' || saved === 'true'
+								? 'light'
+								: window.matchMedia?.('(prefers-color-scheme: dark)').matches
+									? 'dark'
+									: 'light'
+
+					document.documentElement.setAttribute('data-bs-theme', theme)
+				} catch {}
+			})()
+		</script>
+
 		<link href="bootstrap.min.css" rel="stylesheet" />
 
 		<!--Bootstrap Icons-->

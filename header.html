@@ -61,7 +61,10 @@
 
 		<!--Custom JS-->
 		<script type="module" defer>
-			import { switchLights } from './javasc/darkToggle.js'
+			import { switchLights, syncToggleUI } from './javasc/darkToggle.js'
+
+			syncToggleUI(document.documentElement.getAttribute('data-bs-theme'))
+
 			document.getElementById('btnLightsHeader').addEventListener('click', (e) => {
 				switchLights()
 			})

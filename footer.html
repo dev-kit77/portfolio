@@ -57,7 +57,7 @@
 					class="btn btn-light d-inline-flex align-items-center justify-content-center"
 					id="btnLightsFooter"
 					type="button"
-					aria-expanded="false"
+					aria-pressed="false"
 					aria-label="Toggle theme"
 				>
 					<i class="bi bi-moon-stars-fill" fill="currentColor"></i>
@@ -67,7 +67,10 @@
 
 		<!--Custom JS-->
 		<script type="module" defer>
-			import { switchLights } from './javasc/darkToggle.js'
+			import { switchLights, syncToggleUI } from './javasc/darkToggle.js'
+
+			syncToggleUI(document.documentElement.getAttribute('data-bs-theme'))
+
 			document.getElementById('btnLightsFooter').addEventListener('click', (e) => {
 				switchLights()
 			})
