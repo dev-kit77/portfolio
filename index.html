@@ -38,18 +38,71 @@
 
 		<!--Import style sheet-->
 		<link href="style.css" rel="stylesheet" />
-
-		<!--Jquery Import-->
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous"
-		></script>
 	</head>
 
 	<body>
-		<!--Header Insert-->
-		<header id="header" class="sticky-top"></header>
+		<!--Header-->
+		<header id="header" class="sticky-top">
+			<nav class="navbar navbar-expand-lg p-3 bg-primary shadow round" aria-label="Main">
+				<div class="container-fluid">
+					<a class="navbar-brand d-inline-flex bi bi-floppy2-fill logo"></a>
+
+					<a class="navbar-brand d-inline-flex fs-1 fw-bold bytesized-regular" href="#"
+						>Kit Cochrane</a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#headerNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end" id="headerNav">
+						<ul class="navbar-nav jersey-10-regular fs-3 align-items-lg-center">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Welcome</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#projects"
+									>My Projects</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#about"
+									>About Me</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#contact"
+									>More Info</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<button
+									class="btn btn-light d-inline-flex align-items-center justify-content-center"
+									id="btnLightsHeader"
+									type="button"
+									aria-expanded="false"
+									aria-label="Toggle theme"
+								>
+									<i class="bi bi-moon-stars-fill d-inline-flex"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
 		<main>
 			<div class="container p-2">
@@ -648,8 +701,86 @@
 			</div>
 		</main>
 
-		<!--Footer Insert-->
-		<footer id="footer"></footer>
+		<!--Footer-->
+		<footer id="footer">
+			<nav
+				class="navbar navbar-expand-md bg-dark-subtle border-0 border-top"
+				aria-label="Footer"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand fw-bold justify-content-start text-dark"
+						>© 2025 Kit Cochrane</a
+					>
+
+					<ul
+						class="navbar-nav flex-row flex-wrap align-items-center gap-2 justify-content-end"
+					>
+						<li class="nav-item">
+							<a
+								class="bi bi-linkedin text-dark"
+								href="https://www.linkedin.com/in/dev-kit"
+							></a>
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="bi bi-github text-dark"
+								href="https://github.com/dev-kit77"
+							></a>
+						</li>
+					</ul>
+
+					<button
+						class="btn btn-light d-inline-flex align-items-center justify-content-center flex-shrink-0 order-md-last ms-auto ms-md-0"
+						id="btnLightsFooter"
+						type="button"
+						aria-expanded="false"
+						aria-label="Toggle theme"
+					>
+						<i class="bi bi-moon-stars-fill d-inline-flex"></i>
+					</button>
+
+					<div class="navbar-collapse justify-content-end" id="footerNav">
+						<ul
+							class="navbar-nav jersey-10-regular fs-3 flex-column flex-md-row flex-wrap align-items-center justify-content-center justify-content-md-end gap-2 gap-md-0"
+						>
+							<li class="nav-item">
+								<a class="nav-link active text-dark" aria-current="page" href="#"
+									>Welcome</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a
+									class="nav-link active text-dark"
+									aria-current="page"
+									href="#projects"
+									>My Projects</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a
+									class="nav-link active text-dark"
+									aria-current="page"
+									href="#about"
+									>About Me</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a
+									class="nav-link active text-dark"
+									aria-current="page"
+									href="#contact"
+									>More Info</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</footer>
 
 		<!--Custom JS-->
 		<script type="module" src="main.js"></script>

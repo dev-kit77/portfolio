@@ -4,15 +4,20 @@ export { setLights, switchLights, syncToggleUI }
 /**
  * Method to set the light/dark state of the site. sets the HTML attribute and then stores the state
  * @param {boolean} setting boolean value representing true for light, false for dark
+ * @param {{ persist?: boolean }} [options] persist controls whether the choice is written to storage
  */
-function setLights(setting) {
+function setLights(setting, { persist = true } = {}) {
 	const theme = setting ? 'light' : 'dark'
 
 	//set theme
 	document.documentElement.setAttribute('data-bs-theme', theme)
 
-	//store selection
-	localStorage.setItem('lights', setting)
+	//store selection, ignoring failures (e.g. storage blocked in private browsing)
+	if (persist) {
+		try {
+			localStorage.setItem('lights', setting)
+		} catch {}
+	}
 
 	//update toggle buttons to match
 	syncToggleUI(theme)
@@ -42,10 +47,7 @@ function syncToggleUI(theme) {
 		icon?.classList.toggle('bi-moon-stars-fill', !isDark)
 		icon?.classList.toggle('bi-sun-fill', isDark)
 
-		button.setAttribute(
-			'aria-label',
-			isDark ? 'Switch to light theme' : 'Switch to dark theme',
-		)
+		button.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme')
 		button.setAttribute('aria-pressed', String(isDark))
 	})
 }

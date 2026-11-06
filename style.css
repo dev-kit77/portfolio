@@ -27,7 +27,6 @@ img {
 	top: -150px;
 }
 
-/*Only show the success message after Web3Forms redirects to #confirmation*/
 #confirmation {
 	display: none;
 	scroll-margin-top: 8rem;
